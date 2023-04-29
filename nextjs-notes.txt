@@ -1,0 +1,32 @@
+NEXTJS NOTES
+================================
+
+DEMO PROJECT SETUP =>
+
+ENVIRONMENT SETUP
+-------------------
+
+=> create-next-app --typescript
+=> npm run dev => for dev environment
+=> npm run prod => for prod environment
+=> remove document.tsx in pages/document.tsx
+=> remove boiler plate code and imports from pages/index.tsx 
+=> remove homemodule.css from styles/homemodule.css
+=> run npm i -D tailwindcss postcss autoprefixer
+=> run npx tailwindcss init -p
+=> in tailwindconfig.js add following:
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+=> add following tailwind style imports in styles/global.css :
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+ROUTES
+-----------
+=> in next.js app a route for a page is setup automatically by next.js and does not require manual setup
